@@ -1,4 +1,5 @@
 :root {
+    /* color */
     --cyan-600: #4D96A9;
     --cyan-300: #8FE3F9;
     --purple-600: #855FB1;
@@ -7,4 +8,16 @@
     --slate-600: #87879D;
     --slate-300: #D1D1DF;
     --white: #FAFAFA;
+    /* Spacing */
+    --spacing-112: 112px;
+    --spacing-80: 80px;
+    --spacing-72: 72px;
+    --spacing-64: 64px;
+    --spacing-56: 56px;
+    --spacing-40: 40px;
+    --spacing-32: 32px;
+    --spacing-24: 24px;
+    --spacing-16: 16px;
+    --spacing-8: 8px;
+    --spacing-4: 4px;
 }
