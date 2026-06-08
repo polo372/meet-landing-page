@@ -1,5 +1,95 @@
-@import 'reset.css';
-@import 'variable.css';
-@import 'typo.css';
-@import 'component.css';
+@import 'reset.css' layer(reset);
+@import 'variable.css' layer(variable);
+@import 'typo.css' layer(typo);
+@import 'component.css' layer(component);
+@layer reset, variable, typo, component; 
 
+*{
+    text-align: center;
+}
+html{
+    margin: 0 var(--spacing-32);
+}
+.logo{
+    width: 118px;
+    height: 28px;
+    margin: 48px auto 0 auto;
+    
+}
+header{
+    margin-top: var(--spacing-64);
+    margin-bottom: var(--spacing-32);
+}
+main{
+    margin-top: var(--spacing-32);
+    margin-bottom: var(--spacing-64);
+}
+.presentation{
+    margin-top: var(--spacing-64);
+   display: grid;
+   grid-template-areas: "left right";
+   gap: 17px;
+   width: 433px;
+}
+.image-hero-left{
+    grid-area: left;
+}
+.image-hero-right{
+    grid-area: right
+}
+.hello{
+    margin-top: 48px;
+}
+.text > h1,
+.text > p{
+    margin-bottom: var(--spacing-24);
+}
+.pictures{
+    margin-top: 64px;
+    margin-bottom: 64px;
+    display: grid;
+    grid-template-areas: 
+    "lt rt"
+    "lb rb";
+    gap: 16px;
+}
+.pictures > img{
+    border-radius: 15px;
+}
+.videocall{
+    grid-area: lt;
+}
+.videochat{
+    grid-area: rt;
+}
+.meeting{
+    grid-area: lb;
+}
+.texting{
+    grid-area: rb;
+}
+.cyan{
+    color: var(--cyan-600);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.slate600{
+    color: var(--slate-600);
+}
+.slate900{
+    color: var(--slate-900);
+}
+.mb{
+    margin-bottom: 32px;
+}
+footer{
+    margin: 64px 0;
+    width: 375px;
+    height: 374px;
+    background-image: url("/starter-code/assets/mobile/image-footer.jpg");
+    background-size: 100%;
+    backdrop-filter: #4D96A9(50%);
+}
+.white{
+    color: #fff;
+}
