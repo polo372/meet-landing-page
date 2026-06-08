@@ -7,9 +7,6 @@
 *{
     text-align: center;
 }
-html{
-    margin: 0 var(--spacing-32);
-}
 .logo{
     width: 118px;
     height: 28px;
@@ -17,19 +14,16 @@ html{
     
 }
 header{
-    margin-top: var(--spacing-64);
-    margin-bottom: var(--spacing-32);
+    margin: var(--spacing-64) var(--spacing-32) var(--spacing-32) var(--spacing-32);
 }
 main{
-    margin-top: var(--spacing-32);
-    margin-bottom: var(--spacing-64);
+    margin: var(--spacing-32) var(--spacing-32) var(--spacing-64) var(--spacing-32);
 }
 .presentation{
     margin-top: var(--spacing-64);
    display: grid;
    grid-template-areas: "left right";
    gap: 17px;
-   width: 433px;
 }
 .image-hero-left{
     grid-area: left;
@@ -41,7 +35,9 @@ main{
     margin-top: 48px;
 }
 .text > h1,
-.text > p{
+.text > p,
+footer > h2,
+footer> p{
     margin-bottom: var(--spacing-24);
 }
 .pictures{
@@ -83,13 +79,18 @@ main{
     margin-bottom: 32px;
 }
 footer{
-    margin: 64px 0;
+    padding: 64px 32px;
     width: 375px;
     height: 374px;
     background-image: url("/starter-code/assets/mobile/image-footer.jpg");
     background-size: 100%;
-    backdrop-filter: #4D96A9(50%);
+    box-shadow: 0 0 0 200px rgba(77, 150, 169,0.8) inset;
 }
 .white{
     color: #fff;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
