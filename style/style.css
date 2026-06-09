@@ -7,8 +7,11 @@
 *{
     text-align: center;
 }
-body{
+body, html{
     overflow-x: hidden;
+}
+body{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,8 +24,16 @@ body{
 header > img{
     display: none;
 }
-.presentation{
-    margin: var(--spacing-64) -40px 0 -30px;
+.presentation {
+    width: 100%;
+    overflow: hidden;
+    margin-top: var(--spacing-64);
+}
+
+.presentation > img {
+    max-width: none;
+    width: 115%; 
+    margin-left: -7%;
 }
 header{
     margin: var(--spacing-64) var(--spacing-32) var(--spacing-32) var(--spacing-32);
@@ -91,6 +102,9 @@ footer{
     box-shadow: 0 0 0 200px rgba(77, 150, 169,0.8) inset;
     height: 374px;
 }
+footer > a{
+    display: inline-block;
+}
 .white{
     color: #fff;
 }
@@ -100,13 +114,11 @@ footer{
     align-items: center;
 }
 @media screen and (min-width: 768px){
-    .presentation{
+   .presentation > img {
+        max-width: 100%;
         width: 100%;
-        margin: var(--spacing-64) -40px 0 -30px;
-    }
-    .presentation > img{
-        width: 100%;
-    }
+        margin-left: 0;
+   }
     .hello{
         width: 448px;
     }
@@ -131,25 +143,30 @@ footer{
     }
 }
 @media screen and (min-width: 1024px ){
-    .mobil{
+    .presentation{
         display: none;
     }
     header > img{
         display: block;
     }
     header{
+    margin-left: -200px;
+    margin-right: -200px;
+    width: 100%;
     display: grid;
     grid-template-areas: "left middle right";
     gap: 32px;
     }
     .hello{
         grid-area: middle;
+        align-self: center;
     }
     .image-hero-left{
         grid-area: left;
     }
     .image-hero-right{
         grid-area: right;
+        align-self: end;
     }
     .pictures{
         max-width: 1120px;

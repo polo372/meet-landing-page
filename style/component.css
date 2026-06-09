@@ -29,6 +29,10 @@ a{
 .cyan600:hover{
     background-color: #71C0D4;
     }
+a:hover{
+    transition-duration: 1s;
+    transition-property: background-color;
+}
 .txt-cyan300{
     color: var(--cyan-300)
 }
