@@ -19,7 +19,7 @@ body{
     margin-top: 48px;
 }
 .presentation{
-    margin: var(--spacing-64) -50px 0 -30px;
+    margin: var(--spacing-64) -40px 0 -30px;
 }
 header{
     margin: var(--spacing-64) var(--spacing-32) var(--spacing-32) var(--spacing-32);
@@ -33,7 +33,7 @@ main{
 .text > h1,
 .text > p,
 footer > h2,
-footer> p{
+.conclusion{
     margin-bottom: var(--spacing-24);
 }
 .pictures{
@@ -81,11 +81,12 @@ footer{
     position: relative;
     z-index: 1;
     padding: 64px 32px;
-    height: 374px;
+    width: 100%;
     background-image: url("/starter-code/assets/mobile/image-footer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 0 200px rgba(77, 150, 169,0.8) inset;
+    height: 374px;
 }
 .white{
     color: #fff;
@@ -95,7 +96,23 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-@media (min-width: 768px){
+@media screen and (min-width: 380px){
+    .presentation{
+        width: 100%;
+        margin: var(--spacing-64) -40px 0 -30px;
+    }
+    .presentation > img{
+        width: 100%;
+    }
+    .button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1024px ){
     .presentation{
    display: grid;
    grid-template-areas: "left right";

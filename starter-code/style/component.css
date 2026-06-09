@@ -3,10 +3,10 @@ a{
     border-radius: 29px;
     padding: 16px 40px;
     color: #fff;
+    height: 56px;
 }
 .download{
     width: 193px;
-    height: 56px;
     margin-bottom: 16px;
 }
 .purple{
@@ -27,7 +27,6 @@ a{
 .txt-cyan300{
     color: var(--cyan-300)
 }
-
 .barre{
     height: 80px;
     display: flex;
