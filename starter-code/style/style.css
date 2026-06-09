@@ -18,7 +18,7 @@ body{
     height: 28px;
     margin-top: 48px;
 }
-.left, .right{
+header > img{
     display: none;
 }
 .presentation{
@@ -134,19 +134,21 @@ footer{
     .mobil{
         display: none;
     }
-    .presentation{
+    header > img{
+        display: block;
+    }
+    header{
    display: grid;
    grid-template-areas: "left middle right";
    gap: 32px;
 }
-header{
+.hello{
     grid-area: middle;
 }
 .image-hero-left{
-    display: block;
     grid-area: left;
 }
 .image-hero-right{
-    display: block;
-    grid-area: right;}
+    grid-area: right;
+}
 }
