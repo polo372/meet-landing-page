@@ -81,10 +81,10 @@ footer{
     position: relative;
     z-index: 1;
     padding: 64px 32px;
-    width: 100%;
     height: 374px;
     background-image: url("/starter-code/assets/mobile/image-footer.jpg");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0 0 0 200px rgba(77, 150, 169,0.8) inset;
 }
 .white{
@@ -102,11 +102,8 @@ footer{
    gap: 17px;
 }
 .image-hero-left{
-    background-image: url("/starter-code/assets/desktop/image-hero-left.png");
     grid-area: left;
 }
 .image-hero-right{
-    grid-area: right;
-    background-image: url("/starter-code/assets/desktop/image-hero-right.png");
-}
+    grid-area: right;}
 }
