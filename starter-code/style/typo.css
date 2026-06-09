@@ -4,7 +4,33 @@ body{
   letter-spacing: 0px;
   font-weight: bold;
 }
-@media (min-width: 768px){
+.text1{
+  font-size: 40px;
+  }
+  .text2{
+    font-size: 32px;
+  }
+  .text3{
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+@media (min-width: 375px){
+  .text1{
+  font-size: 48px;
+  }
+  .text2{
+    font-size: 36px;
+  }
+  .text3{
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+  .text4{
+    font-weight: medium;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px){
   .text1{
   font-size: 64px;
   }
@@ -24,32 +50,5 @@ body{
     line-height: 150%;
   }
 }
-@media (min-width: 767px){
-  .text1{
-  font-size: 48px;
-  }
-  .text2{
-    font-size: 36px;
-  }
-  .text3{
-    font-size: 14px;
-    letter-spacing: 4px;
-  }
-  .text4{
-    font-weight: medium;
-    font-size: 16px;
-  }
-}
-@media (min-width: 375px){
-  .text1{
-  font-size: 40px;
-  }
-  .text2{
-    font-size: 32px;
-  }
-  .text3{
-    font-size: 12px;
-    letter-spacing: 4px;
-  }
-}
+
 
