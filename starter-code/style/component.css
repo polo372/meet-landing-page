@@ -27,12 +27,16 @@ a{
 .txt-cyan300{
     color: var(--cyan-300)
 }
+
 .barre{
     height: 80px;
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
+}
+.longue{
+    height: 108px;
 }
 .left, .decoration > p{
     border: 1px solid var(--slate-300);
@@ -44,4 +48,16 @@ a{
     align-content: center;
     margin: 0 auto;
     color: var(--slate-600);
+}
+.decoration2{
+    border: 1px solid var(--slate-300);
+    height: 56px;
+    width: 56px;
+    border-radius: 999px;
+    align-content: center;
+    color: var(--slate-600);
+    position: absolute;
+    z-index: 10;
+    top: -25px;
+    background-color: #fff;
 }
