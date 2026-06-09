@@ -18,6 +18,9 @@ body{
     height: 28px;
     margin-top: 48px;
 }
+.left, .right{
+    display: none;
+}
 .presentation{
     margin: var(--spacing-64) -40px 0 -30px;
 }
@@ -96,7 +99,7 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-@media screen and (min-width: 375px){
+@media screen and (min-width: 768px){
     .presentation{
         width: 100%;
         margin: var(--spacing-64) -40px 0 -30px;
@@ -104,23 +107,46 @@ footer{
     .presentation > img{
         width: 100%;
     }
+    .hello{
+        width: 448px;
+    }
     .button{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        align-content: center;
+        align-items: stretch;
         justify-content: center;
+        gap: 17px;
+    }
+    .pictures{
+        gap: 24px;
+        grid-template-areas: 
+        "lt rt lb rb";
+    }
+    .contenu{
+        margin: 0 auto;
+        width: 504px;
+    }
+    footer{
+        background-image: url("/starter-code/assets/tablet/image-footer.jpg");
     }
 }
 @media screen and (min-width: 1024px ){
+    .mobil{
+        display: none;
+    }
     .presentation{
    display: grid;
-   grid-template-areas: "left right";
-   gap: 17px;
+   grid-template-areas: "left middle right";
+   gap: 32px;
+}
+header{
+    grid-area: middle;
 }
 .image-hero-left{
+    display: block;
     grid-area: left;
 }
 .image-hero-right{
+    display: block;
     grid-area: right;}
 }
