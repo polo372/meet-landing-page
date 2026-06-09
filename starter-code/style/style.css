@@ -151,4 +151,13 @@ footer{
 .image-hero-right{
     grid-area: right;
 }
+.pictures{
+    max-width: 1120px;
+}
+footer{
+        background-image: url("/starter-code/assets/desktop/image-footer.jpg");
+    }
+.contenu{
+    width: 544px;
+}
 }
