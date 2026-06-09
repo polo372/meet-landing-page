@@ -4,10 +4,15 @@ a{
     padding: 16px 40px;
     color: #fff;
     height: 56px;
+    text-align: center;
+    
 }
 .download{
     width: 193px;
     margin-bottom: 16px;
+}
+.info{
+    width: 161px;
 }
 .purple{
     background-color: var(--purple-600);

@@ -85,7 +85,7 @@ footer{
     z-index: 1;
     padding: 64px 32px;
     width: 100%;
-    background-image: url("/starter-code/assets/mobile/image-footer.jpg");
+    background-image: url("/assets/mobile/image-footer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 0 200px rgba(77, 150, 169,0.8) inset;
@@ -127,7 +127,7 @@ footer{
         width: 504px;
     }
     footer{
-        background-image: url("/starter-code/assets/tablet/image-footer.jpg");
+        background-image: url("/assets/tablet/image-footer.jpg");
     }
 }
 @media screen and (min-width: 1024px ){
@@ -138,26 +138,40 @@ footer{
         display: block;
     }
     header{
-   display: grid;
-   grid-template-areas: "left middle right";
-   gap: 32px;
-}
-.hello{
-    grid-area: middle;
-}
-.image-hero-left{
-    grid-area: left;
-}
-.image-hero-right{
-    grid-area: right;
-}
-.pictures{
-    max-width: 1120px;
-}
-footer{
-        background-image: url("/starter-code/assets/desktop/image-footer.jpg");
+    display: grid;
+    grid-template-areas: "left middle right";
+    gap: 32px;
     }
-.contenu{
+    .hello{
+        grid-area: middle;
+    }
+    .image-hero-left{
+        grid-area: left;
+    }
+    .image-hero-right{
+        grid-area: right;
+    }
+    .pictures{
+        max-width: 1120px;
+    }
+    footer{
+        background-image: url("/assets/desktop/image-footer.jpg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        padding: 0 80px;
+    }
+    footer > h2{
+        width: 422px;
+        text-align: left;
+    }
+    .conclusion{
+        width: 355px;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .contenu{
     width: 544px;
-}
+    }
 }
