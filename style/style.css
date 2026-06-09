@@ -156,6 +156,7 @@ footer > a{
     display: grid;
     grid-template-areas: "left middle right";
     gap: 32px;
+    justify-content: space-between;
     }
     .hello{
         grid-area: middle;
